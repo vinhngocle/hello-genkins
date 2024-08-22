@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-        git 'https://github.com/vinhngocle/hello-genkins.git'
+        git branch: 'jenkin-file-demo',  url: 'https://github.com/vinhngocle/hello-genkins.git'
       }
     }
   }
